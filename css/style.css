@@ -1,0 +1,388 @@
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+.containerLayout {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+header { 
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    background-color: rgb(247, 247, 247);
+    position: relative;   
+}
+
+.navBar {
+    height: 100px;   
+    display: flex;
+    flex-direction: row;
+
+}
+
+.navBar .logo img{ 
+    height: 70px;
+    margin: 15px 15px;
+}
+
+.navBar ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: auto;
+}
+
+.navBar ul .navItem{
+    padding: 20px;
+    margin: 0 10px;
+    font-weight: 700;
+    text-decoration: none;
+    list-style: none;
+}
+
+.navBar .navItem .navLink{
+    text-decoration: none;
+    list-style: none;
+    color: rgb(110, 110, 110);
+}
+
+.navBar .navItem:hover .navLink{
+    color: #ffb1b1;
+}
+
+.navBar .navItem.active .navLink{
+    background-color: #ffb1b1;
+    color: rgb(255, 255, 255);
+    border: 2px solid #ffb1b1;
+    padding: 15px;
+}
+
+.hero{
+    display: flex;
+    width: 100%;
+    height: 55vh;
+    align-items: flex-end;
+    background: url(/images/cover-home.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.hero p{
+    width: 500px;
+    color: rgb(75, 75, 75);
+    font-size: 2.2rem ;
+    text-align:left;
+    margin: 10% auto;
+    max-width: 1200px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    padding: 5% 0;
+}
+
+.info p{
+    margin: 5% 20%;
+    font-size: 1.2rem;
+}
+.btn {
+    background-color: #ffb1b1;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.info .btn:hover {
+    background-color: #ff6090; 
+    color: #ffffff;
+}
+
+.services {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #d17676;
+}
+
+.services h2 {
+    padding-top: 60px;
+    align-items: center;
+}
+
+.services .col {
+    display: flex;
+    justify-content: center;
+    padding:3% 15%;
+    flex-wrap: wrap;
+}
+
+.col__item{
+    width: 150px;
+    margin: 20px;
+}
+
+.col img{
+    width: 10rem;
+    padding-bottom: 10px;
+
+}
+
+.appointment{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5% 0;
+    padding-bottom: 70px;
+}
+
+.appointment h2{
+    padding: 30px;
+}
+
+.appointment .btn:hover {
+    background-color: #ff6090; 
+    color: #ffffff;
+}
+.sectionF{
+    display: flex;
+    flex-direction: row;
+    height: 500px;    
+}
+.sectionF .column {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        overflow: hidden;
+        justify-content: center;
+        align-items: center;
+}
+
+.sectionF .column img{
+        height:100px;
+}
+
+.sectionF .column .contact{
+    display: flex;
+    flex-direction: column;
+}
+
+.sectionF .column .contact h3{
+    font-size: 22px;
+}
+
+.sectionF .column .socialMedia ul{
+    display:flex;
+    justify-content: center;
+    text-decoration: none;
+    list-style: none;
+    margin-top: 50px;
+}
+
+.sectionF .column .socialMedia ul img {
+    height: 50px;
+    margin: 10px;
+}
+
+.footerBottom{
+        background-color: rgb(255, 160, 93);
+        height: 100px;
+        width: 100%;
+        align-content: center;}
+
+.footerBottom p{
+    padding-top: 30px;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    font-weight: 700;
+   text-align: center;
+}
+
+/*blog*/
+.grid__layout{
+    display: grid;
+    height: 50vh;
+    margin: 10% 10%;
+    grid-template-columns:  1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr ;
+    gap: 2em;
+    justify-content: center;
+
+}
+.title{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-color: rgb(255, 204, 204);
+    padding: 10% 10%;
+    margin-bottom: 5vh;
+    
+}
+
+.title h2 {
+    margin-bottom: 5%;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: lightpink;
+    
+    border: 1px solid blue;
+  }
+
+/*contcto*/
+.contactanos p{
+    margin-top: 100px;
+}
+form {
+  
+    width:340px;
+    height:500px;
+    background:#ffaaaa;
+    margin-top: 100px;
+
+}
+
+  input{
+    width:100%;
+    padding:10px;
+    border-bottom:2px solid #bebed2
+  }
+  
+  button{
+    float:right;
+    padding:8px 12px;
+    margin:8px 0 0;
+    font-family:'Montserrat',sans-serif;
+    border:2px solid #78788c;
+    background:0;
+    color:#5a5a6e;
+    cursor:pointer;
+    transition:all .3s
+  }
+  
+  button:hover{
+    background:#78788c;
+    color:#fff
+  }
+  
+  
+ 
+/*media queries*/
+
+@media screen and (max-width: 768px) {
+
+    .hero{
+        height: 40vh;
+    }
+    .hero p{
+        font-size: 2rem ;
+        margin: 10% 10%;
+    }
+    /*HOME*/
+    .info{
+        padding: 10% 0;
+    }
+
+    /*blog*/
+    .grid__layout{
+        display: grid;
+        height: 70vh;
+        margin: 0 10%;
+        grid-template-columns:  1fr 1fr ;
+        grid-template-rows:  1fr 1fr 1fr ;
+        gap: 1em;
+    }
+
+    .card{
+        background: rgb(194, 71, 89);
+
+    
+}
+
+@media screen and (max-width: 425px) {
+/*navbar*/
+    header{
+        height: 450px;
+        background-color: rgb(247, 247, 247);
+        position:relative;
+    }
+    .navBar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 300px;
+    
+    }
+    .navBar .logo img{ 
+        height: 70px;
+        margin: 15px 15px;
+        max-width: 425px;
+    }
+    .navBar ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+    }
+    .hero{
+        padding-top: 400px;
+        height: 40vh;
+    }
+    .hero p{
+        font-size: 1.7rem ;
+        margin: 10% 10%;
+    }
+    .info{
+        padding: 15% 0;
+    }
+    .sectionF{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;   
+        justify-content: center; 
+    }
+    .sectionF .column {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+           margin:10%; 
+  }
+    /*blog*/
+    .grid__layout{
+        display: grid;
+        height: 90vh;
+        margin: 0 20%;
+        grid-template-columns:  1fr  ;
+        grid-template-rows:  repeat(6 , 1fr) ;
+        gap: 1em;
+    }
+
+    .card{
+        background: rgb(92, 9, 21);
+}
+}
+
+}
